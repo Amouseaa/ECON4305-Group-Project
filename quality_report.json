@@ -1,0 +1,336 @@
+{
+  "schema_version": "1.0.0",
+  "source_file": "6_SP500 Index Dataset.xlsx",
+  "source_sha256": "d1d5034ddb8c93f42a311f47d9e766b797bbf4ef09058b6055ed5c9f03fdd28d",
+  "source_rows": 9243,
+  "source_columns": 136,
+  "validated_rows": 9243,
+  "model_rows": 8992,
+  "feature_count": 153,
+  "source_technical_indicator_count": 129,
+  "added_feature_count": 19,
+  "missing_counts_before_feature_engineering": {
+    "daily_move": 1,
+    "p_sma_5": 4,
+    "p_sma_10": 9,
+    "p_sma_20": 19,
+    "p_sma_50": 49,
+    "p_sma_100": 99,
+    "p_sma_200": 199,
+    "p_ema_5": 4,
+    "p_ema_10": 9,
+    "p_ema_20": 19,
+    "p_ema_50": 49,
+    "p_ema_100": 99,
+    "p_ema_200": 199,
+    "v_sma_5": 4,
+    "v_sma_10": 9,
+    "v_sma_20": 19,
+    "v_sma_50": 49,
+    "v_sma_100": 99,
+    "v_sma_200": 199,
+    "obv_sma_5": 4,
+    "obv_sma_10": 9,
+    "obv_sma_20": 19,
+    "obv_sma_50": 49,
+    "obv_sma_100": 99,
+    "obv_sma_200": 199,
+    "adi_sma_5": 4,
+    "adi_sma_10": 9,
+    "adi_sma_20": 19,
+    "adi_sma_50": 49,
+    "adi_sma_100": 99,
+    "adi_sma_200": 199,
+    "cmf": 19,
+    "mfi": 13,
+    "em_1": 1,
+    "em_14": 14,
+    "vpt_sma_5": 4,
+    "vpt_sma_10": 9,
+    "vpt_sma_20": 19,
+    "vpt_sma_50": 49,
+    "vpt_sma_100": 99,
+    "vpt_sma_200": 199,
+    "nvi_ema_5": 4,
+    "nvi_ema_10": 9,
+    "nvi_ema_20": 19,
+    "nvi_ema_50": 49,
+    "nvi_ema_100": 99,
+    "nvi_ema_200": 199,
+    "vwap_5": 4,
+    "vwap_10": 9,
+    "vwap_20": 19,
+    "vwap_50": 49,
+    "vwap_100": 99,
+    "vwap_200": 199,
+    "atr_sma_5": 4,
+    "atr_sma_10": 9,
+    "atr_sma_20": 19,
+    "atr_sma_50": 49,
+    "atr_sma_100": 99,
+    "atr_sma_200": 199,
+    "bbh": 19,
+    "bbl": 19,
+    "bbm": 19,
+    "bbp": 19,
+    "bbw": 19,
+    "kch": 19,
+    "kcl": 19,
+    "kcc": 19,
+    "kcp": 19,
+    "kcw": 19,
+    "dch": 19,
+    "dcl": 19,
+    "dcm": 19,
+    "dcp": 19,
+    "dcw": 19,
+    "macd": 25,
+    "macd_signal": 33,
+    "macd_diff": 33,
+    "cci": 19,
+    "vortex_ind_pos": 14,
+    "vortex_ind_neg": 14,
+    "vortex_ind_diff": 14,
+    "trix": 43,
+    "trix_signal": 51,
+    "trix_diff": 51,
+    "mass_index": 40,
+    "kst": 14,
+    "kst_sig": 14,
+    "kst_diff": 14,
+    "aroon_up": 24,
+    "aroon_down": 24,
+    "aroon_ind": 24,
+    "stc": 71,
+    "swi": 1,
+    "swi_accum": 1,
+    "rsi": 13,
+    "stoch_rsi": 26,
+    "stoch_rsi_k": 28,
+    "stoch_rsi_d": 30,
+    "stoch": 13,
+    "stoch_signal": 15,
+    "tsi": 37,
+    "tsi_signal": 45,
+    "uo": 28,
+    "wr": 13,
+    "ao": 33,
+    "roc_21": 21,
+    "roc_63": 63,
+    "roc_125": 125,
+    "roc_250": 250,
+    "ppo": 25,
+    "ppo_signal": 33,
+    "ppo_hist": 33,
+    "pvo": 25,
+    "pvo_signal": 33,
+    "pvo_hist": 33,
+    "cmo": 13,
+    "cmo_signal": 15,
+    "dmi": 17,
+    "ko": 55,
+    "ko_signal": 67,
+    "smi": 17,
+    "smi_signal": 19
+  },
+  "excluded_rows": 251,
+  "interior_exclusions": 0,
+  "missing_values_in_final_table": 0,
+  "split_fractions": {
+    "train": 0.7,
+    "validation": 0.15,
+    "test": 0.15000000000000005
+  },
+  "splits": [
+    {
+      "split": "train",
+      "rows": 6294,
+      "start": "1986-12-29",
+      "end": "2011-12-09",
+      "up_count": 3373,
+      "down_or_flat_count": 2921
+    },
+    {
+      "split": "validation",
+      "rows": 1348,
+      "start": "2011-12-12",
+      "end": "2017-04-21",
+      "up_count": 720,
+      "down_or_flat_count": 628
+    },
+    {
+      "split": "test",
+      "rows": 1350,
+      "start": "2017-04-24",
+      "end": "2022-08-31",
+      "up_count": 748,
+      "down_or_flat_count": 602
+    }
+  ],
+  "moving_average_checks": [
+    {
+      "indicator": "p_sma_5",
+      "rows_compared": 9239,
+      "max_absolute_difference": 7.958078640513122e-12,
+      "matches_with_tolerance": true
+    },
+    {
+      "indicator": "p_ema_5",
+      "rows_compared": 9239,
+      "max_absolute_difference": 9.322320693172514e-12,
+      "matches_with_tolerance": true
+    },
+    {
+      "indicator": "v_sma_5",
+      "rows_compared": 9239,
+      "max_absolute_difference": 0.0,
+      "matches_with_tolerance": true
+    },
+    {
+      "indicator": "p_sma_10",
+      "rows_compared": 9234,
+      "max_absolute_difference": 7.958078640513122e-12,
+      "matches_with_tolerance": true
+    },
+    {
+      "indicator": "p_ema_10",
+      "rows_compared": 9234,
+      "max_absolute_difference": 1.000444171950221e-11,
+      "matches_with_tolerance": true
+    },
+    {
+      "indicator": "v_sma_10",
+      "rows_compared": 9234,
+      "max_absolute_difference": 0.0,
+      "matches_with_tolerance": true
+    },
+    {
+      "indicator": "p_sma_20",
+      "rows_compared": 9224,
+      "max_absolute_difference": 8.185452315956354e-12,
+      "matches_with_tolerance": true
+    },
+    {
+      "indicator": "p_ema_20",
+      "rows_compared": 9224,
+      "max_absolute_difference": 1.0913936421275139e-11,
+      "matches_with_tolerance": true
+    },
+    {
+      "indicator": "v_sma_20",
+      "rows_compared": 9224,
+      "max_absolute_difference": 0.0,
+      "matches_with_tolerance": true
+    },
+    {
+      "indicator": "p_sma_50",
+      "rows_compared": 9194,
+      "max_absolute_difference": 7.275957614183426e-12,
+      "matches_with_tolerance": true
+    },
+    {
+      "indicator": "p_ema_50",
+      "rows_compared": 9194,
+      "max_absolute_difference": 1.0913936421275139e-11,
+      "matches_with_tolerance": true
+    },
+    {
+      "indicator": "v_sma_50",
+      "rows_compared": 9194,
+      "max_absolute_difference": 0.0,
+      "matches_with_tolerance": true
+    },
+    {
+      "indicator": "p_sma_100",
+      "rows_compared": 9144,
+      "max_absolute_difference": 9.094947017729282e-12,
+      "matches_with_tolerance": true
+    },
+    {
+      "indicator": "p_ema_100",
+      "rows_compared": 9144,
+      "max_absolute_difference": 1.4551915228366852e-11,
+      "matches_with_tolerance": true
+    },
+    {
+      "indicator": "v_sma_100",
+      "rows_compared": 9144,
+      "max_absolute_difference": 0.0,
+      "matches_with_tolerance": true
+    },
+    {
+      "indicator": "p_sma_200",
+      "rows_compared": 9044,
+      "max_absolute_difference": 9.094947017729282e-12,
+      "matches_with_tolerance": true
+    },
+    {
+      "indicator": "p_ema_200",
+      "rows_compared": 9044,
+      "max_absolute_difference": 1.1823431123048067e-11,
+      "matches_with_tolerance": true
+    },
+    {
+      "indicator": "v_sma_200",
+      "rows_compared": 9044,
+      "max_absolute_difference": 0.0,
+      "matches_with_tolerance": true
+    }
+  ],
+  "cleaning_log": [
+    {
+      "step": "input_rows",
+      "count": 9243,
+      "detail": "Rows read from Data sheet"
+    },
+    {
+      "step": "empty_rows_removed",
+      "count": 0,
+      "detail": "Only fully empty rows"
+    },
+    {
+      "step": "identical_duplicates_removed",
+      "count": 0,
+      "detail": "All columns must agree"
+    },
+    {
+      "step": "missing_targets_reconstructed",
+      "count": 0,
+      "detail": "From observed adjacent closes only"
+    },
+    {
+      "step": "validated_rows",
+      "count": 9243,
+      "detail": "Chronological, unique dates; original sessions retained"
+    },
+    {
+      "step": "incomplete_rows_excluded",
+      "count": 251,
+      "detail": "Missing lagged features, target or feature_date; see excluded_rows.csv"
+    },
+    {
+      "step": "interior_incomplete_rows",
+      "count": 0,
+      "detail": "Excluded dates after first usable observation; inspect if non-zero"
+    },
+    {
+      "step": "model_ready_rows",
+      "count": 8992,
+      "detail": "Complete, one-session-lagged predictors"
+    }
+  ],
+  "policies": {
+    "lag_sessions": 1,
+    "imputation": "none; exclude incomplete model rows after lagging",
+    "outliers": "retain valid market extremes",
+    "scaling": "not performed; fit on training data only",
+    "external_data": false,
+    "supplied_indicators": "retain source definitions except recomputed moving averages"
+  },
+  "validation": "Passed finite-value, label, date, split, one-session alignment and prefix checks",
+  "versions": {
+    "python": "3.12.14",
+    "pandas": "2.2.3",
+    "numpy": "2.3.5"
+  }
+}

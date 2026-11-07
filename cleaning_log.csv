@@ -1,0 +1,9 @@
+step,count,detail
+input_rows,9243,Rows read from Data sheet
+empty_rows_removed,0,Only fully empty rows
+identical_duplicates_removed,0,All columns must agree
+missing_targets_reconstructed,0,From observed adjacent closes only
+validated_rows,9243,"Chronological, unique dates; original sessions retained"
+incomplete_rows_excluded,251,"Missing lagged features, target or feature_date; see excluded_rows.csv"
+interior_incomplete_rows,0,Excluded dates after first usable observation; inspect if non-zero
+model_ready_rows,8992,"Complete, one-session-lagged predictors"
